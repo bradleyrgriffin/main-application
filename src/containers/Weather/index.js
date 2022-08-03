@@ -36,13 +36,13 @@ export const Weather = (props) => {
 
     return (<div>
         <h2>Todays Weather in your area</h2>
-        <input autocomplete="off" 
+        <div className="p-4"><label for="zipValue" ><b>ZIP:</b></label><br/><input  autocomplete="off" 
             onChange={({ target: { value }}) => setZip(value)} 
-            name="zipValue" 
-            label="ZIP" 
+            name="zipValue"
             placeholder="Enter zip here" 
             defaultValue={zip} 
         />
+        </div>
        
         <div className="card">
             <div className="card-header">

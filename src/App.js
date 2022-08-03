@@ -11,6 +11,7 @@ const App = (props) => (
       <nav>
         <ul>
           <li><Link to="/">Landing Page</Link></li>
+          <li><Link to="/weather">Weather in your Area!</Link></li>
         </ul>
       </nav>
       <Switch>
